@@ -1,11 +1,19 @@
 import React from 'react';
-import '../../data/posts.json'
+import Posts from '../../data/posts.json'
 
-function Blogposts(props) {
+function Blogposts() {
+
     return (
-<>
-        <h3>Here is an overview of all our blogposts</h3>
-</>
+        <>
+            <h3>Here is an overview of all our blogposts</h3>
+
+            {
+                Posts.map((post) => {
+                    console.log(post.title)
+                })
+            }
+
+        </>
     );
 }
 
