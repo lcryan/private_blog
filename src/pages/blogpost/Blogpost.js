@@ -1,13 +1,21 @@
 import React from 'react';
+import {Link, useParams} from "react-router-dom";
+import Posts from '../../data/posts.json'
+
+const Blogpost = () => {
+    const {id} = useParams()
 
 
-
-function Blogpost(props) {
 
 
     return (
-        <div></div>
+        <>
+            <h1>Post {id}</h1>
+            <div className="post"/>
+            <p><strong>This is post {id}</strong></p>
+
+        </>
     );
-}
+};
 
 export default Blogpost;
