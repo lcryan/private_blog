@@ -1,19 +1,20 @@
 import React, {useState} from 'react';
-import {Link, NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
+import './Navigation.css'
 
 function Navigation({auth, setAuth, logout}) {
 
     return (
         <>
-        <navbar>
-            <ul>
-                <li> <NavLink to="/">Home</NavLink></li>
-                <li> <NavLink to="/login">Login</NavLink></li>
-                {auth ? <li><NavLink to="/blogposts">Blogposts</NavLink></li> : <li>Blogposts</li>}
+        <navbar className='nav-bar'>
+            <ul className="nav-list">
+                <li> <NavLink to="/" className="home-link">Home</NavLink></li>
+                <li> <NavLink to="/login" className="login-link">Login</NavLink></li>
+                {auth ? <li><NavLink to="/blogposts" className="blogposts-link">Blogposts</NavLink></li> : <li>Blogposts</li>}
+                <button type="button" name="login-button" className="logout-button" onClick={logout} >Logout</button>
             </ul>
-
         </navbar>
-            <button type="button" name="login-button" onClick={logout} >logout</button>
+
         </>
 
     );
