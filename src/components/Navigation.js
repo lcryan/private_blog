@@ -11,7 +11,7 @@ function Navigation({auth, setAuth, logout}) {
                 <li> <NavLink to="/" className="home-link">Home</NavLink></li>
                 <li> <NavLink to="/login" className="login-link">Login</NavLink></li>
                 {auth ? <li><NavLink to="/blogposts" className="blogposts-link">Blogposts</NavLink></li> : <li>Blogposts</li>}
-                <button type="button" name="login-button" className="logout-button" onClick={logout} >Logout</button>
+                <button type="button" className="logout-button" onClick={logout} >Logout</button>
             </ul>
         </navbar>
 

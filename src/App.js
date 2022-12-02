@@ -13,7 +13,7 @@ import './App.css';
 
 
 function App() {
-    // We houden in de state bij of iemand is "ingelogd" (simpele versie)
+
     const [isAuthenticated, toggleIsAuthenticated] = useState(false);
 
     return (

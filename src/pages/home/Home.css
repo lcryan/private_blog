@@ -1,0 +1,21 @@
+h1 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: "American Typewriter",sans-serif;
+    color: grey;
+}
+
+.home-text{
+    font-family: "American Typewriter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    color: dimgrey;
+
+}
