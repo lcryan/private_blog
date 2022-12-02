@@ -6,13 +6,14 @@ const Blogpost = () => {
     const {id} = useParams()
 
 
-
-
     return (
         <>
             <h1>Post {id}</h1>
             <div className="post"/>
             <p><strong>This is post {id}</strong></p>
+            {
+                Posts[id - 1].content
+            }
 
         </>
     );

@@ -11,7 +11,7 @@ function Blogposts() {
         <>
             <h3>Here is an overview of all our blogposts</h3>
             <div>
-            <p>We currently have  {numberOfPosts} blogposts on our page. Feel free to comment.</p>
+                <p>We currently have {numberOfPosts} blogposts on our page. Feel free to comment.</p>
             </div>
 
 
@@ -19,9 +19,10 @@ function Blogposts() {
                 Posts.map((post) => {
                     return (
                         <ul>
-                        <li className="post-title" key={post.id}>
-                            <Link to={ "/blogpost/" + post.id }>{ post.title }</Link>
-                        </li>
+                            <li className="post-title" key={post.id}>
+                                <Link to={`/blogpost/${post.id}`}>{post.title}</Link>
+                            </li>
+
                         </ul>)
                 })
             }
