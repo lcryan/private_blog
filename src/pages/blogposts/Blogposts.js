@@ -9,7 +9,7 @@ function Blogposts() {
 
     return (
         <>
-            <h3>Here is an overview of all our blogposts</h3>
+            <h3>Here is an overview of all our blogposts (private)</h3>
             <div>
                 <p>We currently have {numberOfPosts} blogposts on our page. Feel free to comment.</p>
             </div>

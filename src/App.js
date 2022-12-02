@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -18,13 +18,12 @@ function App() {
 
     return (
         <>
-            <Navigation/>
+            <Navigation auth={isAuthenticated} logout={() => toggleIsAuthenticated(false)}/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/blogposts" element={<Blogposts/>}/>
-                <Route path="/blogpost/:id" element={<Blogpost/>}/>
-                <Route path="/blogpost/:content" element={<Blogpost/>}/>
+                <Route path="/login" element={<Login toggleLogin={() => toggleIsAuthenticated(!isAuthenticated)}/> }/>
+                <Route path="/blogposts" element={isAuthenticated ? <Blogposts/> : <Navigate to = "/"/>}/>
+                <Route path="/blogpost/:id" element={isAuthenticated ? <Blogpost/> : <Navigate to = "/"/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </>
