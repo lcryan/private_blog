@@ -11,7 +11,7 @@ function Blogposts() {
     return (
         <>
             <div className="blogpost-title">
-                <h3>Here is an overview of all our blogposts (private)</h3>
+                <h3>Here is an overview of all our blogposts</h3>
                 <p>We currently have {numberOfPosts} blogposts on our page. Feel free to comment.</p>
             </div>
 

@@ -1,11 +1,9 @@
 import React from 'react';
 import './Home.css'
 
-function Home(props) {
+function Home() {
     return (
         <>
-
-
             <h1>Welcome to our beautiful homepage</h1>
             <span className="home-text">
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
