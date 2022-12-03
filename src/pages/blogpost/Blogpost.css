@@ -1,0 +1,21 @@
+.blogpost-content {
+    font-family: "American Typewriter", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.blog-date {
+    font-family: "American Typewriter", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+}

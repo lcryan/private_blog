@@ -1,0 +1,19 @@
+.blogpost-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "American Typewriter", sans-serif;
+    padding-bottom: 50px;
+}
+
+.blogpost-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "American Typewriter", sans-serif;
+}
